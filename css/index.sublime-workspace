@@ -1,0 +1,408 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tabconte",
+				"tabcontents"
+			],
+			[
+				"upl",
+				"uploadForm"
+			],
+			[
+				"file",
+				"fileUpload"
+			],
+			[
+				"recogni",
+				"recognizeFile"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"Too",
+				"ToolBar"
+			],
+			[
+				"com",
+				"Component"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"padding",
+				"padding-bottom\tproperty"
+			],
+			[
+				"marg",
+				"margin-left\tproperty"
+			],
+			[
+				"inli",
+				"inline-block\tdisplay"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"react-",
+				"React-Canvas"
+			],
+			[
+				"component",
+				"componentDidMount"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"alig",
+				"text-align"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"list-",
+				"list-style-image"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"stro",
+				"stroke-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kyleliang/Documents/everything/School/12th/DevHub/Eyeducate/eyeducate/about-us-update.html",
+		"/Users/kyleliang/Documents/everything/IA/draft2/OCR.js",
+		"/Users/kyleliang/Documents/everything/IA/draft2/index.js",
+		"/Users/kyleliang/Documents/everything/IA/draft2/index.css",
+		"/Users/kyleliang/Documents/everything/IA/draft2/index.html",
+		"/Users/kyleliang/Documents/everything/IA/noticingpoetry/node_modules/tesseract.js/examples/file-input/demo.html",
+		"/Users/kyleliang/Desktop/test2.html",
+		"/Users/kyleliang/Desktop/test/node_modules/tesseract.js/examples/file-input/demo.html",
+		"/Users/kyleliang/Documents/everything/IA/noticingpoetry/test.js",
+		"/Users/kyleliang/Desktop/test.js",
+		"/Users/kyleliang/Documents/everything/IA/noticingpoetry/src/index.html",
+		"/Users/kyleliang/Desktop/test.html",
+		"/Users/kyleliang/Documents/everything/IA/noticingpoetry/src/App.css",
+		"/Users/kyleliang/Documents/everything/IA/noticingpoetry/src/App.js",
+		"/Users/kyleliang/Documents/everything/IA/noticingpoetry/src/App.html",
+		"/Users/kyleliang/Documents/everything/IA/noticingpoetry/src/index.js",
+		"/Users/kyleliang/Documents/everything/IA/tesseract.js/README.md",
+		"/Users/kyleliang/Documents/everything/IA/tesseract.js/examples/file-input/demo.html",
+		"/Users/kyleliang/Documents/everything/IA/tesseract.js/docs/tesseract_parameters.md",
+		"/Users/kyleliang/Documents/everything/IA/tesseract.js/docs/tesseract_lang_list.md",
+		"/Users/kyleliang/Downloads/MSProgrammingThingy.py",
+		"/Users/kyleliang/Documents/everything/IA/noticingpoetry/index.html",
+		"/Users/kyleliang/Documents/everything/IA/my-app/src/App.js",
+		"/Users/kyleliang/Desktop/eyeducate_docker/meme.py",
+		"/Users/kyleliang/Desktop/eyeducate_docker/Dockerfile",
+		"/Users/kyleliang/Desktop/hello.py",
+		"/Users/kyleliang/Desktop/IA/tesseract.js/examples/file-input/demo.html",
+		"/Users/kyleliang/Desktop/IA/tesseract.js/examples/file-input/basic.html",
+		"/Users/kyleliang/Desktop/IA/noticingpoetry/index.html",
+		"/Users/kyleliang/Desktop/!School/CTY Web Design/Unit 13/Website/reviews.html",
+		"/Users/kyleliang/Desktop/!School/CTY Web Design/Unit 13/Website/index.html",
+		"/Users/kyleliang/Desktop/!School/CTY Web Design/Unit 13/Website/donate.html",
+		"/Users/kyleliang/Desktop/!School/CTY Web Design/Unit 13/Website/contact.html",
+		"/Users/kyleliang/Desktop/!School/CTY Web Design/Unit 13/Website/about.html",
+		"/Users/kyleliang/Desktop/!School/!11th Grade/IB CompSci/elevens2.0/Deck.java",
+		"/Users/kyleliang/Desktop/!School/JS projects/JavaScript_Loops_Arrays_Objects/Section_3_Objects/video06_challenge_01/js/students.js",
+		"/Users/kyleliang/Downloads/Card.java",
+		"/Users/kyleliang/Desktop/!School/!11th Grade/IB CompSci/elevens/ElevensBoard.java",
+		"/Users/kyleliang/Desktop/!School/JS projects/quiz/quiz.js",
+		"/Users/kyleliang/Desktop/tc2017/open-dictionary-frontend/src/pages/login/LoginContainer.js",
+		"/Users/kyleliang/Desktop/Other/CTY Web Design/Unit 13/Website/contact.html",
+		"/Users/kyleliang/Desktop/tc2017/open-dictionary-frontend/src/pages/home/HomeContainer.js",
+		"/Users/kyleliang/Desktop/Other/CTY Web Design/Unit 13/Website/index.css",
+		"/Users/kyleliang/Desktop/tc2017/open-dictionary-frontend/src/pages/user/UserContainer.js",
+		"/Users/kyleliang/Library/Application Support/Sublime Text 3/Packages/Babel/babel-transform.js",
+		"/Users/kyleliang/Library/Application Support/Sublime Text 3/Packages/Babel/Babel.sublime-settings",
+		"/Users/kyleliang/Desktop/Other/CTY Web Design/html template.html",
+		"/Users/kyleliang/Desktop/!School/!11th Grade/English 11/free write 2",
+		"/Users/kyleliang/Desktop/Other/CTY Web Design/Unit 13/Website/about.html",
+		"/Users/kyleliang/Desktop/Other/WoW MOP 5.4.8/Mists of Pandaria 5.4.8/Interface/AddOns/Recount/TrackerModules/TrackerModule_PowerGains.lua",
+		"/Users/kyleliang/Desktop/Other/CTY Web Design/Unit 13/Website/reviews/indie/isaac.html",
+		"/Users/kyleliang/Documents/workspace/testing/src/testing/testinEnv.java",
+		"/Users/kyleliang/Desktop/!School/10th Grade/hangman4/hangman4.cpp",
+		"/private/var/folders/52/p5h_z26d40n9bg21pwhklxxc0000gn/T/fz3temp-2/index.css",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/index.css",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/reviews/rpg.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/reviews/indie/isaac.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/reviews/reviews.css",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/reviews.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/index.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/reviews/puzzle.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/reviews/indie.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/Website/reviews/shooter.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 13/index.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/html template.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 12/liquid.css",
+		"/Users/kyleliang/Documents/workspace/hello world/src/helloworld.java",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 12/myliquidpage.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 12/fixed.css",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 12/myfixedpage.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 12/lecture12_1_exercise.html",
+		"/Users/kyleliang/Downloads/lecture12_1_exercise.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 11/assignment 11.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 11/stylesheet.css",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 11/assignment 11",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 10/assignment10part2.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 10/assignment10part1.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 9/assignment 9 part 2.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 9/assignment 9 part 1.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 8/assignment8html5.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 8/assignment8.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 7/assignment7.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 6/compression.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 6/thumbs.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 6/assignment6part1.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 5/contact.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 5/faq.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 5/about.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 5/index.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 5/assignment5.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 4/assignment4.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 4/assignment4part2.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 3/assignment3 part 1.html",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 3/assignment3 part 2.html",
+		"/Users/kyleliang/Downloads/WoWmortal 4.3.4 Mac/Monster 4.3.4 Mac /WTF/Config.wtf",
+		"/Users/kyleliang/Desktop/CTY Web Design/Unit 1/Assignment1Template.html",
+		"/Users/kyleliang/Desktop/10th Grade/pacman4/pacman4.cpp",
+		"/Users/kyleliang/Desktop/10th Grade/hangman4/hangman4.cpp",
+		"/Users/kyleliang/Desktop/hangman4/hangman4.cpp",
+		"/Users/kyleliang/Downloads/citra-osx-20170225-f2ae2a7/README.md",
+		"/Users/kyleliang/Library/Caches/com.zgcoder.BitSlicer/Scripts_Temp/Script 6C4D8043.py",
+		"/Users/kyleliang/Desktop/mcserver/server.properties",
+		"/Users/kyleliang/Desktop/10th Grade/STEAM/path2.svg",
+		"/Users/kyleliang/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 315.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

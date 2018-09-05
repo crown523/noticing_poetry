@@ -1,7 +1,5 @@
-window.onload = function(){
-	var submitButton = document.getElementById("submitButton") //store the submit button element in a variable
-	//changing behavior of the button when clicked
-	submitButton.addEventListener("click", function(event){
+$(document).ready(function(){
+	$("#submitButton").click(function(event){
 		event.preventDefault() //Prevents the form from actually submitting when submit button is clicked
 		if (getFile() == null){ 
 			alert("No file selected") //If no file has been uploaded, inform the user so
@@ -18,22 +16,14 @@ window.onload = function(){
 	})
 	var fileUpload = document.getElementById("fileUpload") //store the file upload field in a variable
 	clearForm()
-	document.getElementById("defaultOpen").click() //"clicks" the level1 tab, opening it by default
-}
+	$("#defaultOpen").click() //"clicks" the level1 tab, opening it by default
+})
 
-function openTab(evt, toOpen){
-	var tabcontents, tabLinks //Create variables to store references in
-
-	tabcontents = document.getElementsByClassName("tabcontent") //get all tabcontent elements, put in a list
-	for (var i = 0; i < tabcontents.length; i++){
-		tabcontents[i].style.display = "none" //iterate through list and change all to no display
-	}
-
-	tablinks = document.getElementsByClassName("tablink") //get all tablink elements, put in a list
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "") //iterate through list and remove active class from all
-    }
-
-    document.getElementById(toOpen).style.display = "block" //display the element corresponding to the tab clicked
-    evt.currentTarget.className += " active" //change classname of selected tab to "active"
+function openTab(obj, toOpen){
+	$(".tabcontent").hide() //Get all elements with class name "tabcontent" and hide them (set display to none)"
+	$(".tablink").attr("class", "tablink")
+	$(obj).addClass("active")
+	$(".tabcontent").attr("class", "tabcontent")
+	$(toOpen).addClass("active")
+    $(toOpen).show() //Show the element with the passed ID
 }

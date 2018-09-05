@@ -38,6 +38,7 @@ body {
   border: 1px solid #000000;
   margin-left: 1%;
   position: relative;
+  background-color: lightblue;
 }
 
 #tabSelector {
@@ -46,16 +47,18 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0;
+  background-color: white;
 }
 
 .tabcontent {
-  display: none;
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
   text-align: center;
 }
 
-/* Animation going from zero to full opacity */
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.active {
+  background-color: lightblue;
+}
+
+.tablink {
+  padding-left: 6.5%;
+  padding-right: 6.5%;
 }

@@ -13,5 +13,5 @@ function handleSubmit(){
 }
 
 function clearForm(){
-	document.getElementById("uploadForm").reset()
+	$("#uploadForm").trigger("reset")
 }
