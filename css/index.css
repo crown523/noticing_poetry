@@ -1,0 +1,28 @@
+html {
+  height: 90%;
+}
+body {
+  height: 95%;
+}
+#root {
+  height: 90%;
+}
+
+#header {
+  background-color: black;
+  height: 5%;
+  width: 100%;
+  margin-top: -1%;
+  margin-left: -1%;
+  padding-bottom: 1%;
+  color: white;
+  position: fixed;
+  display: block;
+  text-align: center;
+}
+
+#main {
+  margin-top: 4%;
+  height: 100%;
+  float: left;
+}

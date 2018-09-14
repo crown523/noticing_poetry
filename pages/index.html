@@ -1,9 +1,49 @@
 <html>
 	<head>
+		<meta charset="utf-8"/>
+		<title> Noticing Poetry </title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<!-- Firebase App is always required and must be first -->
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+		<!-- Add additional services that you want to use -->
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyC6REBCTXxLO-8yxjeaenDIF5SjYM2QHww",
+		    authDomain: "noticing-poetry.firebaseapp.com",
+		    databaseURL: "https://noticing-poetry.firebaseio.com",
+		    projectId: "noticing-poetry",
+		    storageBucket: "",
+		    messagingSenderId: "683139323557"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<script src="../scripts/index.js"></script>
+		<script src="../scripts/formHandler.js"></script>
 	</head>
 	<body>
 		<div id="header">
 			<p> Noticing Poetry </p>
+		</div>
+		<div id="main">
+			<form id="signup">
+				Sign Up <br/>
+				Email: <input type="email" name="email" required> <br/>
+				Password: <input type="password" name="password" required> <br/>
+				I am a: 
+				<label for="student"> Student </label>
+				<input type="radio" name="usertype" id="student" value="student" required> 
+				<label for="teacher"> Teacher </label>
+				<input type="radio" name="usertype" id="teacher" value="teacher" required> <br/>
+				<button type="submit" value="submit"> Register </button>
+			</form>
 		</div>
 	</body>
 </html>

@@ -4,6 +4,23 @@
 		<title> Noticing Poetry </title>
 		<link rel="stylesheet" type="text/css" href="../css/poemEditor.css">
 		<link rel="stylesheet" type="text/css" href=https://cdn.quilljs.com/1.3.6/quill.bubble.css>
+		<!-- Firebase App is always required and must be first -->
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+		<!-- Add additional services that you want to use -->
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyC6REBCTXxLO-8yxjeaenDIF5SjYM2QHww",
+		    authDomain: "noticing-poetry.firebaseapp.com",
+		    databaseURL: "https://noticing-poetry.firebaseio.com",
+		    projectId: "noticing-poetry",
+		    storageBucket: "",
+		    messagingSenderId: "683139323557"
+		  };
+		  firebase.initializeApp(config);
+		</script>
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.js"
 			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -12,7 +29,7 @@
 		<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
 		<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 		<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
-		<script src="../scripts/index.js"></script>
+		<script src="../scripts/poemEditor.js"></script>
 		<script src="../scripts/OCR.js"></script>
 		<script src="../scripts/textEditor.js"></script>
 		<script src="../scripts/formHandler.js"></script>
@@ -58,10 +75,7 @@
 			</div>
 			<!-- Quill.js toolbar -->
 			<div id="toolbar">
-			  	<button class="ql-bold"></button>
-			  	<button class="ql-italic"></button>
-			  	<button class="ql-underline"></button>
-			  	<button id="annotateButton"></button>
+			  	<button id="annotateButton"> <img src="../img/annotateIcon.png" height=20px width=20px/> </button>
 			</div>
 		</div>	
 	</body>

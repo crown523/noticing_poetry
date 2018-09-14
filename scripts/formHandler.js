@@ -1,17 +1,21 @@
 function getFile(){
-	var file = document.getElementById("fileUpload").files[0]
-	return file
+	var file = document.getElementById("fileUpload").files[0];
+	return file;
 }
 
 function getFileType(){
-	var file = getFile()
-	return file.type
+	var file = getFile();
+	return file.type;
 }
 
 function handleSubmit(){			
-	recognizeFile(getFile()) //get the file user submitted, then call the OCR function on it
+	recognizeFile(getFile()); //get the file user submitted, then call the OCR function on it
 }
 
-function clearForm(){
-	$("#uploadForm").trigger("reset")
+function clearForm(id){
+	$(id).trigger("reset");
+}
+
+function getFormContents(id){
+	return $(id).serializeArray();
 }
