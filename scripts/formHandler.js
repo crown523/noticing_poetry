@@ -1,3 +1,5 @@
+//FILE OF HELPER FUNCTIONS FOR FORMS
+
 function getFile(){
 	var file = document.getElementById("fileUpload").files[0];
 	return file;
@@ -17,5 +19,10 @@ function clearForm(id){
 }
 
 function getFormContents(id){
-	return $(id).serializeArray();
+	var fields = $(id).serializeArray();
+	var formValues = []; //Create empty array
+	$.each(fields, function(index, obj){ //Iterate over each elemnt in fields array and run the function
+		formValues.push(obj.value); //add the value of the array element to the new array
+	});
+	return formValues;
 }
