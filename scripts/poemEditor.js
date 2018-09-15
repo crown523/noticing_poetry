@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	//HANDLE FILE UPLOAD & OCR
 	$("#submitButton").click(function(event){
 		event.preventDefault(); //Prevents the form from actually submitting when submit button is clicked
 		if (getFile() == null){ 
@@ -18,6 +19,7 @@ $(document).ready(function(){
 	$("#defaultOpen").click(); //"clicks" the level1 tab, opening it by default
 });
 
+//HANDLE TABS
 function openTab(obj, toOpen){
 	$(".tabcontent").hide(); //Get all elements with class name "tabcontent" and hide them (set display to none)"
 	$(".tablink").attr("class", "tablink");

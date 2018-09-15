@@ -10,11 +10,10 @@ body {
 
 #header {
   background-color: black;
-  height: 5%;
+  height: 8%;
   width: 100%;
   margin-top: -1%;
   margin-left: -1%;
-  padding-bottom: 1%;
   color: white;
   position: fixed;
   display: block;
@@ -25,4 +24,39 @@ body {
   margin-top: 4%;
   height: 100%;
   float: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#signout {
+  float: right;
+  display: none;
+}
+
+#signInandUp {
+  float: right;
+}
+
+#signIn {
+  display: none;
+}
+
+#signUp {
+  display: none;
 }

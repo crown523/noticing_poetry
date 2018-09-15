@@ -1,3 +1,5 @@
+//OCR FILE
+
 function recognizeFile(file){
 	Tesseract.recognize(file, {
 		lang: "eng"		
