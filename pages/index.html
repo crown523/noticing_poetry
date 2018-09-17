@@ -27,6 +27,7 @@
 		</script>
 		<script src="../scripts/index.js"></script>
 		<script src="../scripts/formHandler.js"></script>
+		<script src="../scripts/auth.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -39,6 +40,8 @@
 		<div id="main">
 			<form id="signup">
 				Sign Up <br/>
+				First Name: <input type="text" name="fname" required> <br/>
+				Last Name: <input type="text" name="lname" required> <br/>
 				Email: <input type="email" name="email" required> <br/>
 				Password: <input type="password" name="password" required> <br/>
 				I am a: 
@@ -57,7 +60,8 @@
 				<input type="radio" name="usertype" id="student" value="student" required> 
 				<label for="teacher"> Teacher </label>
 				<input type="radio" name="usertype" id="teacher" value="teacher" required> <br/>
-				<button type="submit" value="submit"> Sign In </button>
+				<button type="submit" value="submit"> Sign In </button> <br/>
+				Don't have an account? Click here to <a href="" id="showsignup"> Sign Up </a>
 			</form>
 		</div>
 	</body>
