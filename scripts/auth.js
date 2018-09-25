@@ -9,9 +9,9 @@ $(document).ready(function(){
 		  $("#signup").hide();
 		  $("#signInandUp").hide();
 		  $("#signout").show();
-		  updateProfile(values[0], values[1]);
+		  createUserProfile(values[0], values[1], values[4]);
 		}).catch(function(error) {
-		  console.log(error.code, error.message)
+			console.log(error.code, error.message)
 		});
 	});
 
@@ -59,14 +59,17 @@ $(document).ready(function(){
 	});
 });	
 
-function updateProfile(fname, lname){
+function createUserProfile(fname, lname, accType){
 	var user = firebase.auth().currentUser;
+	displayName = fname + " " + lname
 	user.updateProfile({
-	  displayName: fname + " " + lname
+	  displayName: displayName
 	}).then(function() {
 	  console.log("user profile created")
 	  console.log(user.displayName)
 	}).catch(function(error) {
 	  console.log(error.code, error.message)
 	});
+	writeUserData(user.uid, displayName, user.email, accType) 
+
 }
