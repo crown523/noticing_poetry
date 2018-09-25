@@ -1,8 +1,8 @@
 var database = firebase.database();
 
-function writeUserData(userId, displayName, email, accType) {
+function setUserData(userId, displayName, email, accType) {
     firebase.database().ref('users/' + userId).set({
-    username: displayName,
+    displayName: displayName,
     email: email,
     type: accType
   }, function(error) {
@@ -12,4 +12,15 @@ function writeUserData(userId, displayName, email, accType) {
       console.log("data saved")
     }
   });
+}
+
+function getUserData(userId){
+	data = []
+	database.ref('/users/' + userId).once('value').then(function(snapshot) {
+	  data.push(snapshot.val().displayName)
+	  data.push(snapshot.val().email)
+	  data.push(snapshot.val().type)
+	  userFName = snapshot.val().displayName.split(" ")[0]
+	  $("#greeting").html("Hello, " + userFName)
+	});
 }

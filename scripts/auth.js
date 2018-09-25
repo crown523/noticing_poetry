@@ -3,7 +3,6 @@ $(document).ready(function(){
 	$("#signup").submit(function(event){
 		event.preventDefault(); //Prevent form from submitting
 		var values = getFormContents("#signup"); //Get contents of all form field as elements in an array
-		console.log(values)
 		firebase.auth().createUserWithEmailAndPassword(values[2], values[3]).then(function() {
 		  console.log("Signup successful")
 		  $("#signup").hide();
@@ -19,7 +18,6 @@ $(document).ready(function(){
 	$("#signin").submit(function(event){
 		event.preventDefault();
 		var values = getFormContents("#signin"); //Get contents of all form field as elements in an array
-		console.log(values)
 		firebase.auth().signInWithEmailAndPassword(values[0], values[1]).then(function() {
 		  console.log("Signin successful")
 		  $("#signin").hide();
@@ -46,15 +44,11 @@ $(document).ready(function(){
 	firebase.auth().onAuthStateChanged(function(user) {
 	  if (user) {
 	    // User is signed in
-	    var name = user.displayName;
-  		var email = user.email;
-  		var photoUrl = user.photoURL;
-  		var emailVerified = user.emailVerified;
-  		var uid = user.uid;
-  		console.log(name, email, photoUrl, emailVerified, uid)
+	    getUserData(user.uid)
 	  } else { 
 	    // No user is signed in
 	    console.log("Signed out")
+	    $("#greeting").html("Hello, Guest")
 	  }
 	});
 });	
@@ -66,10 +60,9 @@ function createUserProfile(fname, lname, accType){
 	  displayName: displayName
 	}).then(function() {
 	  console.log("user profile created")
-	  console.log(user.displayName)
 	}).catch(function(error) {
 	  console.log(error.code, error.message)
 	});
-	writeUserData(user.uid, displayName, user.email, accType) 
+	setUserData(user.uid, displayName, user.email, accType) 
 
 }
