@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Noticing Poetry </title>
+		<link rel="stylesheet" type="text/css" href="../css/studentPortal.css">
+		<!-- Firebase App is always required and must be first -->
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+		<!-- Add additional services that you want to use -->
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyC6REBCTXxLO-8yxjeaenDIF5SjYM2QHww",
+		    authDomain: "noticing-poetry.firebaseapp.com",
+		    databaseURL: "https://noticing-poetry.firebaseio.com",
+		    projectId: "noticing-poetry",
+		    storageBucket: "",
+		    messagingSenderId: "683139323557"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<script src="../scripts/database.js"></script>
+		<script src="../scripts/studentPortal.js"></script>
+		<script src="../scripts/auth.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<ul>
+				<li> <a href=""> Noticing Poetry </a> </li>
+				<li id="signout"> <a href=""> Sign Out </a> </li>
+				<li id="greeting"> Hello, Guest </li>
+			</ul>
+		</div>
+		<div id="main">
+		</div>
+	</body>
+</html>

@@ -41,16 +41,7 @@ $(document).ready(function(){
 	});
 
 	//HANDLE AUTH STATE CHANGE
-	firebase.auth().onAuthStateChanged(function(user) {
-	  if (user) {
-	    // User is signed in
-	    getUserData(user.uid)
-	  } else { 
-	    // No user is signed in
-	    console.log("Signed out")
-	    $("#greeting").html("Hello, Guest")
-	  }
-	});
+	
 });	
 
 function createUserProfile(fname, lname, accType){

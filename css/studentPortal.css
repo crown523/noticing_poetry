@@ -54,13 +54,4 @@ li a {
 
 #signout {
   float: right;
-  display: none;
-}
-
-#signInandUp {
-  float: right;
-}
-
-#signupsection {
-  display: none;
 }
