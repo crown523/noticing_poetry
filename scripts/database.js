@@ -7,20 +7,29 @@ function setUserData(userId, displayName, email, accType) {
     type: accType
   }, function(error) {
     if (error) {
-      console.log("failed")
+      console.log("failed");
     } else {
-      console.log("data saved")
+      console.log("data saved");
     }
   });
 }
 
-function getUserData(userId){
-	data = []
+function updateUsername(userId){
 	database.ref('/users/' + userId).once('value').then(function(snapshot) {
-	  data.push(snapshot.val().displayName)
-	  data.push(snapshot.val().email)
-	  data.push(snapshot.val().type)
-	  userFName = snapshot.val().displayName.split(" ")[0]
-	  $("#greeting").html("Hello, " + userFName)
+	  userFName = snapshot.val().displayName.split(" ")[0];
+	  $("#greeting").html("Hello, " + userFName);
 	});
+}
+
+function checkUserTypeandRedirect(userId){
+  database.ref('/users/' + userId).once('value').then(function(snapshot) {
+    var userType = snapshot.val().type;
+    if (userType == "student") {
+        window.location.replace("../pages/studentPortal.html");
+        console.log("student logged in, redirecting");
+      }
+      else {
+        console.log("teacher logged in");
+      }
+  });
 }
