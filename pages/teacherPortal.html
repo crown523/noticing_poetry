@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Noticing Poetry </title>
+		<link rel="stylesheet" type="text/css" href="../css/studentPortal.css">
+		<!-- Firebase App is always required and must be first -->
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+		<!-- Add additional services that you want to use -->
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyC6REBCTXxLO-8yxjeaenDIF5SjYM2QHww",
+		    authDomain: "noticing-poetry.firebaseapp.com",
+		    databaseURL: "https://noticing-poetry.firebaseio.com",
+		    projectId: "noticing-poetry",
+		    storageBucket: "",
+		    messagingSenderId: "683139323557"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script 
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+			crossorigin="anonymous">		
+		</script>
+		<link rel="stylesheet" 
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+			crossorigin="anonymous">
+		<script 
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+			crossorigin="anonymous">	
+		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link href="../css/grayscale.min.css" rel="stylesheet">
+    	<script src="../scripts/jquery-easing/jquery.easing.min.js"></script>
+		<script src="../scripts/grayscale.js"></script>
+		<script src="../scripts/database.js"></script>
+		<script src="../scripts/studentPortal.js"></script>
+		<script src="../scripts/auth.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+	      <div class="container">
+	        <a class="navbar-brand js-scroll-trigger" href="">Noticing Poetry</a>
+	        <div class="collapse navbar-collapse" id="navbarResponsive">
+	          <ul class="navbar-nav ml-auto">
+	            <li class="nav-item">
+	              <p class="nav-link" id="greeting">Hello, Guest</p>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link js-scroll-trigger" href="#signinsection" id="signout">Sign Out</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+		<div class="bg-black" id="main">
+	      <div class="container d-flex h-100 align-items-center">
+	      	<div class="row">
+	      		<div class="col-md-6"> <button> hello </button> </div>
+	      		<div class="col-md-6"> <button> hello </button> </div>
+	      	</div>
+	      </div>
+   		</div>
+	</body>
+</html>

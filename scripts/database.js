@@ -29,6 +29,7 @@ function checkUserTypeandRedirect(userId){
         console.log("student logged in, redirecting");
       }
       else {
+        window.location.replace("../pages/teacherPortal.html")
         console.log("teacher logged in");
       }
   });
