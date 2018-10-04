@@ -9,4 +9,7 @@ $(document).ready(function(){
 	    window.location.replace("../pages/index.html");	  
 		}
 	});
+	$("#editorLink").click(function(){
+		window.location.replace("../pages/poemEditor.html")
+	})
 })
