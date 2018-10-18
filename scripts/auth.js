@@ -38,10 +38,8 @@ $(document).ready(function(){
 		}).catch(function(error) {
 		  console.log(error.code, error.message)
 		});
-	});
+	});	
 
-	//HANDLE AUTH STATE CHANGE
-	
 });	
 
 function createUserProfile(fname, lname, accType){
@@ -55,5 +53,4 @@ function createUserProfile(fname, lname, accType){
 	  console.log(error.code, error.message)
 	});
 	setUserData(user.uid, displayName, user.email, accType) 
-
 }

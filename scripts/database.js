@@ -1,7 +1,7 @@
 var database = firebase.database();
 
 function setUserData(userId, displayName, email, accType) {
-    firebase.database().ref('users/' + userId).set({
+    database.ref('users/' + userId).set({
     displayName: displayName,
     email: email,
     type: accType

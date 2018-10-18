@@ -1,15 +1,15 @@
 $(document).ready(function(){
-	clearForm("#signup");
-	clearForm("#signin");
-
 	firebase.auth().onAuthStateChanged(function(user) {
 	  if (user) {
 	    // User is signed in
-	    checkUserTypeandRedirect(user.uid)
+	    updateUsername(user.uid);
 	  } else { 
 	    // No user is signed in
 	    console.log("Signed out")
-	  }
+	    window.location.replace("../pages/index.html");	  
+		}
 	});
-});
-
+	$("#studentManagement").click(function(){
+		window.location.replace("../pages/studentManagement.html")
+	})
+})

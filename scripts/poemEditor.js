@@ -17,6 +17,26 @@ $(document).ready(function(){
 	});
 	clearForm("#uploadForm");
 	$("#defaultOpen").click(); //"clicks" the level1 tab, opening it by default
+
+	$("#signout").click(function(event){
+		event.preventDefault();
+		firebase.auth().signOut().then(function() {
+		  console.log("Signout successful");
+		}).catch(function(error) {
+		  console.log(error.code, error.message)
+		});
+	});	
+
+	firebase.auth().onAuthStateChanged(function(user) {
+	  if (user) {
+	    // User is signed in
+	    updateUsername(user.uid);
+	  } else { 
+	    // No user is signed in
+	    console.log("Signed out")
+	    window.location.replace("../pages/index.html");	  
+		}
+	});
 });
 
 //HANDLE TABS
