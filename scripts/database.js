@@ -34,3 +34,14 @@ function checkUserTypeandRedirect(userId){
       }
   });
 }
+
+function getAllStudentData(){
+  console.log("hi")
+  database.ref('/users/').once('value').then(function(snapshot) {
+    data = snapshot.val()
+    // data.forEach(function(item){
+    //   console.log(item);
+    // });
+    console.log(data);
+  });
+}

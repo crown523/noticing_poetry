@@ -9,7 +9,8 @@ $(document).ready(function(){
 	    window.location.replace("../pages/index.html");	  
 		}
 	});
-	$("#studentManagement").click(function(){
-		window.location.replace("../pages/studentManagement.html")
+	$("#studentManagement").click(function(event){
+		event.preventDefault();
+		window.location.replace("../pages/studentManagement.html");
 	})
 })
