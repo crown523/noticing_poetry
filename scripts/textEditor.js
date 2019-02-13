@@ -1,5 +1,7 @@
 var editor;
 
+var tab1count = 0, tab2count = 0, tab3count = 0, tab4count = 0;
+
 $(document).ready(function(){
 	//CREATE TEXT EDITOR
 	var options = {
@@ -24,8 +26,37 @@ function getSelectedText(){
 }
 
 function createAnnotation(text, tab){
-	var annotation = $("<div class='annotation'</div>").text(text); //create two div tags, put the passed text inside them
+	var annotation = $("<div class='annotation opener'></div>").text(text); //create two div tags, put the passed text inside them
+	var annotationNo = 0;
+	var tabNo = $(tab).attr('id')
+
+	switch(tabNo){
+		case "level1":
+			tab1count++;
+			annotationNo = tab1count;
+			break;
+		case "level2":
+			tab2count++;
+			annotationNo = tab2count;			
+			break;
+		case "level3":
+			tab3count++;
+			annotationNo = tab3count;
+			break;
+		case "level4":
+			tab4count++;
+			annotationNo = tab4count;
+			break;
+	}
+	$(annotation).attr('id', tabNo + " " + annotationNo);
 	$(tab).append(annotation); //insert the created html into the passed tab element
+
+	//Open dialog box when annotation is clicked
+	$(".opener").on('click', function(){
+		$(".myInput").val('');
+		$(this).addClass("current");
+	    $("#dialog").dialog("open");
+	});
 }
 
 function createTextObject(text){
@@ -33,5 +64,6 @@ function createTextObject(text){
 		"text": text,
 		"annotation": ""
 	};
+
 	return textObj;
 }

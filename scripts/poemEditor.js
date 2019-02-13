@@ -37,6 +37,36 @@ $(document).ready(function(){
 	    window.location.replace("../pages/index.html");	  
 		}
 	});
+	$(".annotation").click(function(event){
+		console.log("clicked")
+	})
+
+	//Initialize dialog
+	$("#dialog").dialog({
+	    autoOpen: false,
+	    show: {
+	        effect: "blind",
+	        duration: 1000
+	    },
+	    hide: {
+	        effect: "blind",
+	        duration: 1000
+	    },
+	    modal: true
+	});
+
+	//When the button in the form is clicked, add the comment to the annotation that was clicked
+	$('.formSaver').on('click', function(){
+		var currentText = $(".current").text();
+		var originalText = currentText.substring(0, currentText.indexOf('Comment'));
+		var newText = originalText + "Comment: " + $('.myInput').val();
+		console.log(newText)
+	    $(".current").text(newText);
+	    $(".current").removeClass("current");
+	    $("#dialog").dialog('close');
+	});
+	
+
 });
 
 //HANDLE TABS
