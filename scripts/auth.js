@@ -33,6 +33,7 @@ $(document).ready(function(){
 		event.preventDefault();
 		firebase.auth().signOut().then(function() {
 		  console.log("Signout successful")
+		  window.location.replace("../pages/index.html");
 		  $("#signInandUp").show(); //show signin/signup button
 		  $("#signout").hide(); //hide signout button
 		}).catch(function(error) {

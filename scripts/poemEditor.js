@@ -57,9 +57,11 @@ $(document).ready(function(){
 
 	//When the button in the form is clicked, add the comment to the annotation that was clicked
 	$('.formSaver').on('click', function(){
-		var currentText = $(".current").text();
-		var originalText = currentText.substring(0, currentText.indexOf('Comment'));
-		var newText = originalText + "Comment: " + $('.myInput').val();
+		var originalText = $(".current").text();
+		if (originalText.indexOf('Comment') != -1){
+			var originalText = originalText.substring(0, originalText.indexOf('Comment'));
+		}
+		var newText = originalText + " Comment: " + $('.myInput').val();
 		console.log(newText)
 	    $(".current").text(newText);
 	    $(".current").removeClass("current");
