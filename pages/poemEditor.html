@@ -58,6 +58,7 @@
         		</label>
         		<button id="submitButton" type="submit"> Confirm </button>
       		</form>
+
 		</div>
 		<div id="sidebar">
 			<!-- Tab Contents -->
@@ -84,8 +85,14 @@
 			<div id="toolbar">
 			  	<button id="annotateButton"> <img src="../img/annotateIcon.png" height=20px width=20px/> </button>
 			</div>
+			<button id="previouslysaved" style="float:right;"> Previously Saved </button>
+			<button id="savebutton" style="float:right;"> Save </button>
 		</div>	
-		<div id="dialog" title="Edit Annotation">
+		<div id="saveddialog" title="Open Previously Saved Poems">
+		    <p> Click to Open </p>
+		    <div id="poemlinks"> </div>
+		</div>
+		<div id="annotationdialog" title="Edit Annotation">
 		    <p> Enter the comment for this annotation here </p>
 		    <textarea class="myInput">Text Here</textarea> <br/>
 		    <button class="formSaver">Confirm</button>

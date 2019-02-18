@@ -12,4 +12,7 @@ $(document).ready(function(){
 	$("#editorLink").click(function(){
 		window.location.replace("../pages/poemEditor.html")
 	})
+	$("#poemManageLink").click(function(){
+		window.location.replace("../pages/poemManagement.html")
+	})
 })

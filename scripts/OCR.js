@@ -8,3 +8,4 @@ function recognizeFile(file){
 			editor.setText(result.text, 'api'); //Using Quill's pre-established methods to change the editor text 
 		});
 }  
+ 

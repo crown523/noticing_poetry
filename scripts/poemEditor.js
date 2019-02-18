@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	//HANDLE FILE UPLOAD & OCR
 	$("#submitButton").click(function(event){
 		event.preventDefault(); //Prevents the form from actually submitting when submit button is clicked
@@ -42,7 +43,20 @@ $(document).ready(function(){
 	})
 
 	//Initialize dialog
-	$("#dialog").dialog({
+	$("#annotationdialog").dialog({
+	    autoOpen: false,
+	    show: {
+	        effect: "blind",
+	        duration: 1000
+	    },
+	    hide: {
+	        effect: "blind",
+	        duration: 1000
+	    },
+	    modal: true
+	});
+
+	$("#saveddialog").dialog({
 	    autoOpen: false,
 	    show: {
 	        effect: "blind",
@@ -65,9 +79,37 @@ $(document).ready(function(){
 		console.log(newText)
 	    $(".current").text(newText);
 	    $(".current").removeClass("current");
-	    $("#dialog").dialog('close');
+	    $("#annotationdialog").dialog('close');
 	});
+
+	$("#previouslysaved").on('click', function(){
+	    $("#saveddialog").dialog("open");
+	});
+
+	//GET PREVIOUSLY SAVED POEMS
+	database.ref('/users/' + firebase.auth().currentUser.uid).once('value').then(function(snapshot) {
+	    var userType = snapshot.val().type;
+	    console.log(userType)
+	    if (userType == "student") {
+	        getAllPoemKeys(firebase.auth().currentUser.uid);
+	    }
+	    else {
+	        getAllPoemKeysTeacher();
+	    }
+  	});
+
 	
+
+
+
+	//HANDLE SAVING
+	$("#savebutton").on('click', function(){
+		var annotationHTML = $("#sidebar").html();
+		var userId = firebase.auth().currentUser.uid;
+		console.log(annotationHTML)
+		var poemKey = savePoem(annotationHTML, userId);
+		console.log(poemKey)
+	})
 
 });
 

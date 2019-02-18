@@ -25,4 +25,4 @@ function getFormContents(id){
 		formValues.push(obj.value); //add the value of the array element to the new array
 	});
 	return formValues;
-}
+} 

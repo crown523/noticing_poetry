@@ -55,7 +55,7 @@ function createAnnotation(text, tab){
 	$(".opener").on('click', function(){
 		$(".myInput").val('');
 		$(this).addClass("current");
-	    $("#dialog").dialog("open");
+	    $("#annotationdialog").dialog("open");
 	});
 }
 

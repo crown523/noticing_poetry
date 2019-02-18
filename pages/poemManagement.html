@@ -46,11 +46,11 @@
     	<script src="../scripts/jquery-easing/jquery.easing.min.js"></script>
 		<script src="../scripts/grayscale.js"></script>
 		<script src="../scripts/database.js"></script>
-		<script src="../scripts/studentPortal.js"></script>
+		<script src="../scripts/studentManagement.js"></script>
 		<script src="../scripts/auth.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+	    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 	      <div class="container">
 	        <a class="navbar-brand js-scroll-trigger" href="">Noticing Poetry</a>
 	        <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -65,14 +65,26 @@
 	        </div>
 	      </div>
 	    </nav>
+	    <div class="bg-black h-20"> 
+	    	<div class="col-md-3"> </div>
+	    </div>
+	    <header class="masthead bg-black sManageHead" style="min-height:7em;height:7em;">
+   		</header>
 		<div class="bg-black" id="main">
-	      <div class="container h-100">
-	      	<div class="row h-75" id="btns">
-	      		<button class="col-md-5 btn btn-primary" id="editorLink"> Poem Editor </button>
-	      		<div class="col-md-2"> </div>
-	      		<!-- <button class="col-md-5 btn btn-primary" id="poemManageLink"> Poem Management </button> -->
-	      	</div>
-	      </div>
+			<div class="container">
+				<div class="row h-10">
+					<div class="col-md-3"> </div>
+	      		</div>
+	      		<div class="row h-10 bg-white" id="headrow">
+	      			<div class="col-md-3 name"> Name </div>
+	      			<div class="col-md-3 class"> Class </div>
+	      			<div class="col-md-3 links"> Links </div>
+	      		</div>
+	      		<div class="row h-10 bg-black spacer"> 
+	      			<div class="col-md-3"></div>
+	      		</div>
+		    </div>
+			<div class="container h-100" id="poems"> </div>
    		</div>
 	</body>
 </html>

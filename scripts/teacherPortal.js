@@ -13,4 +13,8 @@ $(document).ready(function(){
 		event.preventDefault();
 		window.location.replace("../pages/studentManagement.html");
 	})
+	$("#viewpoems").click(function(event){
+		event.preventDefault();
+		window.location.replace("../pages/poemEditor.html");
+	})
 })

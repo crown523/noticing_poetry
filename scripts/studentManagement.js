@@ -5,14 +5,12 @@ $(document).ready(function(){
 	var student1 = {"fName": "Joe", "lName": "Bloe", "classPeriod": "1A"}
 	var student2 = {"fName": "Jane", "lName": "Doe", "classPeriod": "1B"}
 	var student3 = {"fName": "John", "lName": "Moe", "classPeriod": "2A"}
-	var student4 = {"fName": "No", "lName": "You", "classPeriod": "3B"}
+	var student4 = {"fName": "Kyle", "lName": "L", "classPeriod": ""}
 	var student5 = {"fName": "Jeff", "lName": "Geoff", "classPeriod": "4A"}
 	var student6 = {"fName": "Adam", "lName": "Smith", "classPeriod": "3A"}
 	var student7 = {"fName": "Jennifer", "lName": "Smith", "classPeriod": "2B"}
-	var student8 = {"fName": "Omega", "lName": "LuL", "classPeriod": "4B"}
-	var student9 = {"fName": "College", "lName": "Reject", "classPeriod": "3B"}
-	var student10 = {"fName": "Pepe", "lName": "Hands", "classPeriod": "1A"}
-	var studentsArray = [student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]
+
+	var studentsArray = [student1, student2, student3, student4, student5, student6, student7]
 
 	//sortByParameter(studentsArray, "fName", true);
 	//sortByParameter(studentsArray, "lName", true);
